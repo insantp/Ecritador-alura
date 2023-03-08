@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>San-scripthor</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/lbco.jpg" alt="logosp">
+         </header>
+
+ 
+         <!-aqui esta el primer cuadro de recepcion de texto->        
+    <main>
+        <section class="">
+            <textarea class="texto" cols="30" rows="10" placeholder="Ecriba aquì"></textarea>
+            <div>
+                <h5 class="att"> No se pueden utilizar mayusculas ni caracteres especiales</h5>
+
+
+                <!-aqui estan los botones->                
+            </div>
+            <div class="botonera">
+                <button class="btn-encriptar" onclick="btnencriptar()">Encriptar</button>
+                <button class="btn-decriptar" onclick="btndecriptar()">Desencriptar</button>
+            </div>
+        </section>
+       
+       
+        <!-aqui esta el resultado->       
+        <section>
+            <textarea class="resultArea" cols="30" rows="12"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="btnCopiar()"> copiar   </button>
+            </div>
+        </section>
+    </main>   
+
+    
+<script src="script.js"></script>  
+
+    <footer>
+        <p class="copyright">&copy2023 - Proyecto por: Santiago Pérez.2023. </p>
+    </footer>
+</body>
+</html>
